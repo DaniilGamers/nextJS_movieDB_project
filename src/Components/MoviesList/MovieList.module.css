@@ -1,0 +1,120 @@
+.Posters{
+    width: 15vw;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#LoadingBox{
+
+    width: 100%;
+    height: 84.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: var(--main-text-color);
+
+}
+
+.listBoxMain{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.listBox{
+    margin: 0;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.listBox:hover{
+    transform: scale(98%);
+    transition: 0.5s;
+}
+.movieList{
+    width: 75vw;
+    height: 47vh;
+    display: flex;
+    background-color: var(--moviecard-color);
+    justify-content: left;
+    align-items: center;
+    color: var(--moviecard-text-color);
+    border-radius: 20px;
+    text-decoration-line: none;
+    transition: 0.5s;
+
+}
+.DescriptionBox{
+    margin: 10px;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    font-size: 17px;
+}
+
+.PageButtonsBox{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.PageButtonBox{
+    margin: 10px;
+    width: 30vw;
+    border-radius: 10px;
+    border-color: var(--moviecard-color);
+    transition: 0.5s;
+    background-color: var(--moviecard-color);
+    color: var(--moviecard-text-color);
+}
+
+.PageButtonBox:hover{
+    transform: scale(98%);
+    transition: 0.5s;
+}
+
+.PageButtonBox:disabled{
+    transform: scale(100%);
+}
+
+.PageNumberBox{
+    width: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-color: var(--moviecard-color);
+    background-color: var(--moviecard-color);
+    color: var(--moviecard-text-color);
+    transition: 0.5s;
+}
+
+/*[data-theme="dark"]{*/
+
+/*    --moviecard-color: royalblue;*/
+/*    --moviecard-text-color: white;*/
+
+/*}*/
+
+/*[data-theme="light"]{*/
+
+/*    --moviecard-color: lightblue;*/
+/*    --moviecard-text-color: black;*/
+
+/*}*/

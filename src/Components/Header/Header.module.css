@@ -1,0 +1,79 @@
+.HeaderMainBox{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderBox{
+    width: 95vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--header-color);
+    color: var(--header-text-color);
+    transition: 0.5s;
+}
+
+.logoBox{
+    width: 14vw;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logoBox:hover{
+    transform: scale(95%);
+    transition: 0.5s;
+}
+
+.OptionBox{
+    width: 55vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.LinkButtonsHeader{
+    transition: 0.5s;
+}
+
+.LinkButtonsHeader a {
+    text-decoration-line: none;
+    color: var(--header-text-color);
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.LinkButtonsHeader:hover{
+    transform: scale(95%);
+    transition: 0.5s;
+}
+
+.logoBox a {
+    text-decoration-line: none;
+    color: var(--header-text-color);
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+/*[data-theme="dark"]{*/
+
+/*    --header-color: royalBlue;*/
+/*    --header-text-color: white;*/
+
+/*}*/
+
+/*[data-theme="light"]{*/
+
+/*    --header-color: lightblue;*/
+/*    --header-text-color: black;*/
+
+/*}*/
