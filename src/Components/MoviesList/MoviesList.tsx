@@ -12,7 +12,7 @@ const MoviesList:FC<Props> = async ({path, currentPage}) => {
 
     let {movies} = []
 
-    if (path?.startsWith('/movies')){
+    if (path.startsWith('/movies')){
         movies = await getAllMovies(currentPage)
     }
 

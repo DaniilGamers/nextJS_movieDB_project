@@ -1,0 +1,38 @@
+#genresBoxMain{
+
+    width: 99vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.genresButton{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1px;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+.genresButton:hover{
+    transform: scale(90%);
+    transition: 0.5s;
+}
+
+#listMovieBox{
+
+    width: 100%;
+    height: 80.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+    font-size: 55px;
+    transition: 0.5s;
+
+}
