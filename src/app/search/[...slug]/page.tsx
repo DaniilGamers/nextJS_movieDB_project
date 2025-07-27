@@ -9,18 +9,20 @@ type Props = {
 
 }
 
-const MoviesPage:FC<Props> = async ({searchParams }) => {
-    const page = (await searchParams).page ? parseInt((await searchParams).page) : 1;
-    console.log(page)
+const SearchMoviesPage: FC<Props> = async ({params, searchParams}) => {
 
+    const { slug } = await params;
+
+    const page = (await searchParams).page ? parseInt((await searchParams).page) : 1;
+
+    console.log(page)
 
 
     return (
         <div>
-            Hello movies page {page}
-            <MoviesList currentPage={page} path="/movies"/>
+            <MoviesList path="/search" currentPage={page} id_and_keyword={slug}/>
         </div>
     );
 };
 
-export default MoviesPage;
+export default SearchMoviesPage;

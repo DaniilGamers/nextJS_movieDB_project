@@ -12,13 +12,13 @@ const Search = () => {
         const input = e.target as HTMLInputElement;
         const result = input.value
 
-        if (result === ''){
+        if (!result){
 
-            redirect(`/movies/search`)
+            redirect(`/search`)
 
         }else{
 
-            redirect(`/movies/search/${result}?page=1`)
+            redirect(`/search/${result}?page=1`)
 
             return
 

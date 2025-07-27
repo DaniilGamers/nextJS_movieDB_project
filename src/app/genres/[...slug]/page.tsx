@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import MoviesList from "@/Components/MoviesList/MoviesList";
 
 type Props = {
 
@@ -8,9 +9,10 @@ type Props = {
 
 }
 
-const SearchMoviesPage: FC<Props> = async ({params, searchParams}) => {
+const MoviesListByGenrePage: FC<Props> = async ({params, searchParams}) => {
 
     const { slug } = await params;
+
     const page = (await searchParams).page ? parseInt((await searchParams).page) : 1;
 
     console.log(page)
@@ -18,9 +20,9 @@ const SearchMoviesPage: FC<Props> = async ({params, searchParams}) => {
 
     return (
         <div>
-            Keyword = {slug} and page = {page}
+        <MoviesList path='/genres' currentPage={page} id_and_keyword={slug}/>
         </div>
     );
 };
 
-export default SearchMoviesPage;
+export default MoviesListByGenrePage;
