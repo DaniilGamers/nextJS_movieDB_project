@@ -14,7 +14,7 @@ const GenreBadge = async () => {
     return ( <div>
             <div style={{display: "flex", justifyContent: "center", width: "100vw"}}>
                 {
-                   genres.genres.map((genre) => <div key={genre.id}><Link style={{textDecorationLine: "none"}} className={css.genresButton} href={`/genres/${genre.id}/?page=1`}><div><Badge color="primary" className={css.genresButton}>{genre.name}</Badge></div></Link><div></div></div>)
+                   genres.genres.map((genre) => <div key={genre.id}><Link style={{textDecorationLine: "none"}} className={css.genresButton} href={`/genres/${genre.id}/?page=1`}><div><Badge color="secondary" className={css.genresButton}>{genre.name}</Badge></div></Link><div></div></div>)
                 }
             </div>
 
