@@ -36,3 +36,7 @@
     transition: 0.5s;
 
 }
+
+:global(html.light) .listMovieBox{
+    --main-text-color: black;
+}

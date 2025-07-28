@@ -49,7 +49,7 @@
         width: 45px;
         height: 45px;
         border-radius: 50px;
-        background-color: blue;
+        background-color: #1a1a1a;
         transition: 0.5s;
 
     }
@@ -58,7 +58,7 @@
         width: 45px;
         height: 45px;
         border-radius: 50px;
-        background-color: orange;
+        background-color: white;
         transition: 0.5s;
 
     }
