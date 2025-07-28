@@ -17,6 +17,11 @@
     transition: 0.5s;
 }
 
+:global(html.light) .HeaderBox{
+    --header-color: lightblue;
+    --header-text-color: black;
+}
+
 .logoBox{
     width: 14vw;
     height: 50px;

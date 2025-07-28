@@ -48,6 +48,12 @@
 
 }
 
+:global(html.light) .FooterBox{
+    --header-color: lightblue;
+    --header-text-color: black;
+    transition: 0.5s;
+}
+
 /*[data-theme="dark"]{*/
 
 /*    --header-color: royalBlue;*/

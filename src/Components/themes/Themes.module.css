@@ -1,9 +1,9 @@
 :root{
-    --main-color: #000000;
+    --main-color: white;
     --main-text-color: white;
-    --header-color: royalBlue;
+    --header-color: #4b4b4b;
     --header-text-color: white;
-    --moviecard-color: royalBlue;
+    --moviecard-color: #4b4b4b;
     --moviecard-text-color: white;
     --page-button-color: royalblue;
     --page-button-text-color: white;

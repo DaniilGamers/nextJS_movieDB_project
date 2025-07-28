@@ -7,6 +7,11 @@
     align-items: center;
     font-size: 55px;
     color: var(--main-text-color);
+    transition: 0.5s;
+}
+
+:global(html.light) .searchBoxMain{
+    --main-text-color: black;
 }
 
 .inputBox{
@@ -15,5 +20,14 @@
     height: 10vh;
     font-size: 40px;
     text-align: center;
+    transition: 0.5s;
+    color: white;
+    background-color: #4B4B4BFF;
+
+}
+
+:global(html.light) .inputBox{
+    background-color: white;
+    color: black;
 
 }

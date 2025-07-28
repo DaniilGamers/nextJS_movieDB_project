@@ -19,6 +19,8 @@ export const getAllMovies = async (page: string): Promise<IMovieListPageModel<IM
     })
         .then(value => value.json())
 
+    console.log(movies)
+
 
     return movies
 
@@ -34,6 +36,8 @@ export const getMovie = async (id: string): Promise<IMovieInfoModel>  => {
         }
     })
         .then(value => value.json())
+
+    console.log(movie)
 
 
     return movie
@@ -52,6 +56,8 @@ export const getGenres = async (): Promise<IGenresListModel<IGenresModel>>  => {
         credentials: 'include',
     }).then(value => value.json());
 
+    console.log(genres)
+
 
     return genres
 
@@ -68,6 +74,8 @@ export const getAllMoviesByGenres = async (page: string, genreId: string): Promi
     })
         .then(value => value.json())
 
+    console.log(movies)
+
 
     return movies
 
@@ -83,6 +91,8 @@ export const getAllMoviesByKeyword = async (page: string, keyword: string): Prom
         }
     })
         .then(value => value.json())
+
+    console.log(movies)
 
 
     return movies

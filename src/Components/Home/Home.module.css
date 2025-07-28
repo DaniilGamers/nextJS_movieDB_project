@@ -14,22 +14,6 @@
 
 }
 
-body{
-    background-color: var(--main-color);
-    margin: 0;
-    transition: 0.5s;
+:global(html.light) .welcomeBox{
+    --main-text-color: black;
 }
-
-/*[data-theme="dark"]{*/
-
-/*    --main-text-color: white;*/
-/*    --main-color: darkblue;*/
-
-/*}*/
-
-/*[data-theme="light"]{*/
-
-/*    --main-text-color: black;*/
-/*    --main-color: white;*/
-
-/*}*/

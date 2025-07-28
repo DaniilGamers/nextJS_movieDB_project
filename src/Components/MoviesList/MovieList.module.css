@@ -106,6 +106,21 @@
     transition: 0.5s;
 }
 
+:global(html.light) .movieList{
+    --moviecard-color: lightblue;
+    --moviecard-text-color: black;
+}
+
+:global(html.light) .PageButtonBox{
+    --moviecard-color: lightblue;
+    --moviecard-text-color: black;
+}
+
+:global(html.light) .PageNumberBox{
+    --moviecard-color: lightblue;
+    --moviecard-text-color: black;
+}
+
 /*[data-theme="dark"]{*/
 
 /*    --moviecard-color: royalblue;*/
